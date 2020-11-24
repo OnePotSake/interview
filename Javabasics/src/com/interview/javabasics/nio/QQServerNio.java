@@ -14,8 +14,6 @@ import java.util.List;
  * @Description: 单线程NIO
  */
 public class QQServerNio {
-  private byte[] bytes = new byte[1024];
-  //
   static ByteBuffer byteBuffer = ByteBuffer.allocate(512);
   public static void main(String[] args) {
     try {
@@ -40,13 +38,11 @@ public class QQServerNio {
           socketChannelList.add(socketChannel);
         }
       }
-
     } catch (InterruptedException e) {
       e.printStackTrace();
     } catch (IOException e) {
       e.printStackTrace();
     }
-
   }
 
   private static void foreachSocketChannel(List<SocketChannel> socketChannelList) {
