@@ -1,22 +1,24 @@
 package com.interview.thread.verification;
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * 功能描述: <br>
  *  @Description: volatile并不能保证多个线程共同修改running变量时所带来的不一致问题，也就是说volatile不能替代synchronized
  * @Author: OnePotSake
  * @Date: 2020/11/26 0:35
  */
-public class VolatileConformity {
+public class VolatileConformityDecide {
   volatile Integer sum  = 0;
-  void m(){
+  synchronized void m(){
     for (int i = 0; i < 10000; i++) {
      sum ++;
     }
+    System.out.println(Thread.currentThread().getName());
   }
 
   public static void main (String[] args) {
-    VolatileConformity volatileConformity = new VolatileConformity();
+    VolatileConformityDecide volatileConformity = new VolatileConformityDecide();
     List<Thread> list = new ArrayList<>();
     for(int i=0; i<10; i++) {
       list.add(new Thread(volatileConformity::m, "thread-"+i));
