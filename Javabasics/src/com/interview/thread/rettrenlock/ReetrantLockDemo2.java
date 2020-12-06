@@ -1,4 +1,4 @@
-package com.interview.thread.rettren;
+package com.interview.thread.rettrenlock;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
