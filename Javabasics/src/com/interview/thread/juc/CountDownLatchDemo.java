@@ -25,6 +25,7 @@ public class CountDownLatchDemo {
 
     for(int i = 0; i < threads.length; i++) {
       threads[i] = new Thread(() -> {
+        // 我们是
         int result = 0;
         for(int j = 0; j < 10000; j++) {
           result += j;
