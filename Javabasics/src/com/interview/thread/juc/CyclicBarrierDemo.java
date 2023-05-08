@@ -6,7 +6,7 @@ import java.util.concurrent.CyclicBarrier;
 public class CyclicBarrierDemo {
 
   public static void main(String[] args) {
-    // easyDemo();
+     easyDemo();
   }
 
   private static void easyDemo() {

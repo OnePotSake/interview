@@ -3,9 +3,9 @@ import java.util.concurrent.TimeUnit;
 
 
 /**
- * ¹¦ÄÜÃèÊö: <br>
+ * åŠŸèƒ½æè¿°: <br>
  *  @Description: CaseCodeAccount2
- * ¡´ Ö´ĞĞĞ´Èë·½·¨¼ÓËø, ¶Á·½·¨²»¼ÓËøÊÇ·ñ¿ÉÒÔ? ²»ĞĞ,ÕâÑù»òÔì³ÉÔà¶Á,³öÏÖÔàÊı¾İ  ¡µ
+ * ã€ˆ æ‰§è¡Œå†™å…¥æ–¹æ³•åŠ é”, è¯»æ–¹æ³•ä¸åŠ é”æ˜¯å¦å¯ä»¥? ä¸è¡Œ,è¿™æ ·æˆ–é€ æˆè„è¯»,å‡ºç°è„æ•°æ®  ã€‰
  * @Author: OnePotSake
  * @Date: 2020/11/25 23:21
  */
@@ -46,7 +46,7 @@ public class CaseCodeAccount {
 
   public static void main (String[] args) {
     CaseCodeAccount zCode = new CaseCodeAccount();
-    new Thread(()->{zCode.set("ÕÅÈı", 100);}, "t1").start();
+    new Thread(()->{zCode.set("ï¿½ï¿½ï¿½ï¿½", 100);}, "t1").start();
       try {
         TimeUnit.MICROSECONDS.sleep(2);
       } catch (InterruptedException e) {
